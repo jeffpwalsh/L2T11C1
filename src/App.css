@@ -1,19 +1,57 @@
+/* GENERAL OVERAL STYLING */
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  background-color: #282c34;
+  padding: 20px;
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home {
+
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+
 }
 
-.App-header {
+#dropdown-basic-button {
+
+  width: 170px; 
+
+  
+}
+
+.Option:hover {
+
+  background-color: lightgray;
+
+
+}
+
+.game {
+
+  background-color: lightgray;
+  padding: 5px; 
+  color: #282c34;
+  width: 150px; 
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+
+}
+
+.body {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,17 +60,32 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+
+  margin: 50px;
+  text-align: center; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+img {
+
+  width: 200px; 
+  height: 350px; 
 }
+
+
+.cards {
+
+  margin: 20px; 
+
+}
+
+
+
+
+
+
+

@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+//PAGE REDIRECT
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+//BOOTSTRAP IMPORTS
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+//COMPONENT IMPORTS
+import Menu from './components/Menu'
+import Home from './components/Home'
+import Converter from './components/Converter'
+import CardsDisplay from './components/CardsDisplay.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+      <div className="header">
+      <Menu />
+      </div>
+      <div className="body">
+        {/* REDIRECTS */}
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/cards" component={CardsDisplay} />
+          <Route path="/converter" component={Converter} />
+        </Switch>
+      </Router>
+      </div>
     </div>
   );
 }
