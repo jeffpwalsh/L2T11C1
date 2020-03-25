@@ -1,6 +1,6 @@
 # Game - Guess Card
  - Code: L2T11C1
- -This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
  
  ## Description
  - Card game built with React
